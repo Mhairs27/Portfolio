@@ -6,8 +6,8 @@
     <title>Mhairs Cambay/Portfolio</title>
     <link rel="icon" type="image/x-icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,71 +15,156 @@
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
         
-        <nav>
+        <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
+    <!-- home page -->
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home_content">
             <h3>Hello, I am</h3>
             <h1>Mhairs Cambay</h1>
-            <p>
-                
-            </p>
+            <div class="social-media">
+                    <a href="https://www.facebook.com/mhairscambay?mibextid=ZbWKw"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/mhairssssssss"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/mhairs-cambay-b962032a1/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+        </div>
 
-        <div class="home-img">
+        <div class="profession-container">
+            <div class="profession-box">
+
+            <div class="overlay"></div>
+        </div>
+
+    
+            <div class="home_img">
                 <img src="images/home.png" alt="">
             </div>
         </section>
 
         <!-- about-->
         <section class="about" id="about">
-            <div class="about-img">
+            <div class="about_img">
                 <img src="images/about.png" alt="">
             </div>
 
-            <div class="about-content">
+            <div class="about_content">
                 <h2 class="heading">About <span>Me</span></h2>
-                <p>Hello, I am <h1>Mhairs Cambay</h1>, a second-year  BS Information Technology student
+                <p>
+                    Hello, I am <span style="color: black; font-weight: bold;">Mhairs Cambay</span>, a second-year BS Information Technology student
                     at the University of Pangasinan, passionate about developing my skills in software development.
-                    I have experience with <h1>Python</h1> and <h1>Java</h1>, though I’m still learning in these languages. I’ve had the opportunity
-                     to work on game development and website projects, which has change my interest in building creative applications. 
-                     I’m continuously working to improve my coding abilities and expand my knowledge in the field of IT."
-                </p>  
+                    I have experience with <span style="color: black; font-weight: bold;">Python</span> and <span style="color: black; font-weight: bold;">Java</span>, though I’m still learning in these languages.
+                    I’ve had the opportunity to work on game development and website projects, which has changed my interest in building creative applications.
+                    I’m continuously working to improve my coding abilities and expand my knowledge in the field of IT.
+                  </p>
+                  
 
-        <!-- portfolio section design -->
-        <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+            </div>
+        </section>             
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
 
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+         <!-- skills page-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills_container">
+            <div class="skills_box">
+                <i class='bx prog lang'></i>
+                <h3>Programming languages</h3>
+                <p>Python and Java</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills_box">
+                <i class='bx web dev'></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript (I am beginner and familiar with the basics, 
+                    still learning and experimenting with small projects).</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills_box">
+                <i class='bx other tools'></i>
+                <h3>Git/Github</h3>
+                <p>Version control for collaborative projects.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- project page -->
+        <section class="project" id="project">
+        <h2 class="heading">Group <span>Projects</span></h2>
+
+        <div class="project_container">
+            <div class="project_box">
+                <img src="images/project1.png" alt="">
+
+                <div class="project_column">
+                    <h4>FILIPINO RIDDLE</h4>
+                    <p>It aims to make the people enhance their critical thinking of the use.
+                        The system will provide a playful background and music so all can use the game. 
+                        The primary goal of the game is to make it fun, entertaining, and can help the mental health of users.
+                    </p>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
+            <div class="project_box">
+                <img src="images/project2.png" alt="">
 
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                <div class="project_column">
+                    <h4>KIDSUNIBOOKSHELF</h4>
+                    <p>It offers a quality service and downloadable PDF books for elementary students of all levels. 
+                        They can request uniforms for them to make their transactions easier, and we can also put in PDF books 
+                        to access their books even if they are not borrowing a book from school. 
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-            
+          <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input_box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
             </div>
-        </section>
-        </div>
+            <div class="input_box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
     </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer_text">
+            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
